@@ -1,4 +1,4 @@
-<?php namespace Lecturize\Taxonomies\Contracts;
+<?php namespace Roae\Taxonomies\Contracts;
 
 interface TaxableInterface
 {

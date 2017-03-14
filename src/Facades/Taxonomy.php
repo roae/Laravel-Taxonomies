@@ -1,4 +1,4 @@
-<?php namespace Lecturize\Taxonomies\Facades;
+<?php namespace Roae\Taxonomies\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

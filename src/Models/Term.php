@@ -1,4 +1,4 @@
-<?php namespace Lecturize\Taxonomies\Models;
+<?php namespace Roae\Taxonomies\Models;
 
 use Cviebrock\EloquentSluggable\Sluggable;
 
@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * Class Term
- * @package Lecturize\Taxonomies\Models
+ * @package Roae\Taxonomies\Models
  */
 class Term extends Model
 {

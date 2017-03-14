@@ -1,7 +1,7 @@
-<?php namespace Lecturize\Taxonomies;
+<?php namespace Roae\Taxonomies;
 
-use Lecturize\Taxonomies\Models\Taxonomy;
-use Lecturize\Taxonomies\Models\Term;
+use Roae\Taxonomies\Models\Taxonomy;
+use Roae\Taxonomies\Models\Term;
 
 class TaxableUtils
 {

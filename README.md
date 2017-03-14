@@ -1,7 +1,4 @@
-[![Latest Stable Version](https://poser.pugx.org/lecturize/laravel-taxonomies/v/stable)](https://packagist.org/packages/lecturize/laravel-taxonomies)
-[![Total Downloads](https://poser.pugx.org/lecturize/laravel-taxonomies/downloads)](https://packagist.org/packages/lecturize/laravel-taxonomies)
-[![License](https://poser.pugx.org/lecturize/laravel-taxonomies/license)](https://packagist.org/packages/lecturize/laravel-taxonomies)
-
+Clone of [lecturize/laravel-taxonomies](https://github.com/lecturize/laravel-taxonomies)
 # Laravel Taxonomies
 
 Simple, nestable Terms & Taxonomies (similar to WordPress) for Laravel 5.
@@ -10,7 +7,7 @@ Simple, nestable Terms & Taxonomies (similar to WordPress) for Laravel 5.
 
 **This package is a work in progress**, please use with care and feel free to report any issues or ideas you may have!
 
-We've transferred this package to a new owner and therefor updated the namespaces to **Lecturize\Taxonomies**. The config file is now `config/lecturize.php`.
+We've transferred this package to a new owner and therefor updated the namespaces to **Roae\Taxonomies**. The config file is now `config/roae.php`.
 
 ## Installation
 
@@ -18,11 +15,11 @@ Require the package from your `composer.json` file
 
 ```php
 "require": {
-	"lecturize/laravel-taxonomies": "dev-master"
+	"roae/laravel-taxonomies": "dev-master"
 }
 ```
 
-and run `$ composer update` or both in one with `$ composer require lecturize/laravel-taxonomies`.
+and run `$ composer update` or both in one with `$ composer require roae/laravel-taxonomies`.
 
 Next register the service provider and (optional) facade to your `config/app.php` file
 
@@ -30,17 +27,17 @@ Next register the service provider and (optional) facade to your `config/app.php
 'providers' => [
     // Illuminate Providers ...
     // App Providers ...
-    Lecturize\Taxonomies\TaxonomiesServiceProvider::class
+    Roae\Taxonomies\TaxonomiesServiceProvider::class
 ];
 ```
 
 ## Configuration & Migration
 
 ```bash
-$ php artisan vendor:publish --provider="Lecturize\Taxonomies\TaxonomiesServiceProvider"
+$ php artisan vendor:publish --provider="Roae\Taxonomies\TaxonomiesServiceProvider"
 ```
 
-This will create a `config/lecturize.php` and a migration file. In the config file you can customize the table names, finally you'll have to run migration like so:
+This will create a `config/roae.php` and a migration file. In the config file you can customize the table names, finally you'll have to run migration like so:
 
 ```bash
 $ php artisan migrate
@@ -133,4 +130,4 @@ Licensed under [MIT license](http://opensource.org/licenses/MIT).
 
 ## Author
 
-**Handcrafted with love by [Alexander Manfred Poellmann](http://twitter.com/AMPoellmann) for [Lecturize](https://lecturize.com) in Vienna &amp; Rome.**
+**Handcrafted with love by [Alexander Manfred Poellmann](http://twitter.com/AMPoellmann) for [Roae](https://roae.com) in Vienna &amp; Rome.**

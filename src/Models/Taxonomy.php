@@ -1,11 +1,11 @@
-<?php namespace Lecturize\Taxonomies\Models;
+<?php namespace Roae\Taxonomies\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 /**
  * Class Taxonomy
- * @package Lecturize\Taxonomies\Models
+ * @package Roae\Taxonomies\Models
  */
 class Taxonomy extends Model
 {
@@ -46,7 +46,7 @@ class Taxonomy extends Model
 	 */
 	public function posts()
 	{
-		return $this->morphedByMany('App\Lecturize\Models\Posts\Post', 'taxable', 'taxables');
+		return $this->morphedByMany('App\Roae\Models\Posts\Post', 'taxable', 'taxables');
 	}
 
 	/**

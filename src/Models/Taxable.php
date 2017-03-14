@@ -1,10 +1,10 @@
-<?php namespace Lecturize\Taxonomies\Models;
+<?php namespace Roae\Taxonomies\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 /**
  * Class Taxable
- * @package Lecturize\Taxonomies\Models
+ * @package Roae\Taxonomies\Models
  */
 class Taxable extends Model
 {

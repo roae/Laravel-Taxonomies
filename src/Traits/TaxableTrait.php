@@ -1,9 +1,9 @@
-<?php namespace Lecturize\Taxonomies\Traits;
+<?php namespace Roae\Taxonomies\Traits;
 
 /**
  * Class TaxableTrait
  * @deprecated Use HasTaxonomies instead.
- * @package Lecturize\Taxonomies\Traits
+ * @package Roae\Taxonomies\Traits
  */
 trait TaxableTrait
 {
