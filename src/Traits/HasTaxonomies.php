@@ -40,7 +40,9 @@ trait HasTaxonomies
 
 		$this->createTaxables($terms, $taxonomy, $parent, $order );
 
-		$terms = Term::whereIn('name', $terms)->pluck('id')->all();
+		$terms = Term::whereIn('name', $terms)->get()->pluck('id')->all();
+
+		var_dump($terms);
 
 		if ( count($terms) > 0 ) {
 			foreach ( $terms as $term )
@@ -76,7 +78,7 @@ trait HasTaxonomies
 	{
 		$terms = TaxableUtils::makeTermsArray($terms);
 
-		TaxableUtils::createTerms($terms );
+		TaxableUtils::createTerms($terms);
 		TaxableUtils::createTaxonomies($terms, $taxonomy, $parent, $order );
 	}
 
@@ -102,7 +104,7 @@ trait HasTaxonomies
 			$term_ids = $this->getTaxonomies('term_id');
 		}
 
-		return Term::whereIn('id', $term_ids)->pluck('name');
+		return Term::whereIn('id', $term_ids)->get()->pluck('name')->all();
 	}
 
 	/**
