@@ -189,7 +189,7 @@ trait HasTaxonomies
 	 * @return
 	 */
 	public function scopeWithTax( $query, $term, $taxonomy ) {
-		$term_ids = Taxonomy::where('taxonomy', $taxonomy)->pluck('term_id');
+		$term_ids = Taxonomy::where('taxonomy', $taxonomy)->get()->pluck('term_id')->all();
 
 		$term = Term::whereIn('id', $term_ids)->where('name', '=', $term)->first();
 
@@ -207,7 +207,7 @@ trait HasTaxonomies
 	 * @return mixed
 	 */
 	public function scopeWithTerm( $query, $term, $taxonomy ) {
-		$term_ids = Taxonomy::where('taxonomy', $taxonomy)->pluck('term_id');
+		$term_ids = Taxonomy::where('taxonomy', $taxonomy)->get()->pluck('term_id')->all();
 
 		$term = Term::whereIn('id', $term_ids)->where('name', '=', $term)->first();
 
